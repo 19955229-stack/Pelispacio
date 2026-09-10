@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeliSpacio</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header class="her">
+  <div class="logo-container">
+    <img src="caleb x chock.jpeg" alt="PeliSpacio Logo" class="logo">
+    <div class="logo-text">
+    </div>
+  </div>
+
+  <nav class="nan">
+    <a href="proyecto.html" class="in">Inicio</a>
+    <a href="peliculas.html" class="ine">Peliculas</a>
+    <a href="planes.html" class="in">Planes</a>
+    <a href="nosotros.html" class="in">Nosotros</a>
+    <a href="contacto.html" class="in">Contacto</a>
+  </nav>
+   <img src="ChatGPT Image 29 ago 2026, 11_25_42.png" class="usuario">
+  </header>
+
+  <a href="peliculas.html" class="volver-peliculas">‹ Volver a Películas</a>
+
+  <!-- Información de la película -->
+  <section class="detalle-pelicula">
+    <div class="detalle-fondo" id="detalle-fondo"></div>
+
+    <div class="detalle-contenido">
+      <img id="detalle-poster" class="detalle-poster" src="" alt="Póster">
+
+      <div class="detalle-info">
+        <h1 id="detalle-titulo">Título</h1>
+        <p id="detalle-subtitulo" class="detalle-subtitulo">Título original</p>
+
+        <div class="detalle-badges">
+          <span class="badge-pill badge-hd" id="detalle-badge-calidad">HD</span>
+          <span class="badge-pill" id="detalle-badge-anio">2026</span>
+          <span class="badge-pill" id="detalle-badge-duracion">0h 0m</span>
+          <span class="badge-pill badge-imdb">⭐ <span id="detalle-badge-imdb">0.0</span></span>
+        </div>
+
+        <p id="detalle-descripcion" class="detalle-descripcion">Descripción</p>
+
+        <div class="detalle-generos" id="detalle-generos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tráiler, más abajo en la misma página -->
+  <section class="detalle-video-section">
+    <h2>Reproducir</h2>
+    <div class="servidores-tabs" id="servidores-tabs">
+      <button class="servidor-tab activo" data-servidor="1" onclick="cambiarServidor(1)">Servidor 1 (Vimeo)</button>
+      <button class="servidor-tab" data-servidor="2" onclick="cambiarServidor(2)">Servidor 2 (Mega)</button>
+    </div>
+    <div class="video-responsive" id="video-responsive"></div>
+  </section>
+
+  <footer class="pie-pagina">
+    <p>PeliSpacio • Tu espacio de cine digital • &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

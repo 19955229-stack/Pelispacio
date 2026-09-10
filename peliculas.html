@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeliSpacio</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header class="her">
+  <div class="logo-container">
+    <img src="caleb x chock.jpeg" alt="PeliSpacio Logo" class="logo">
+    <div class="logo-text">
+    </div>
+  </div>
+
+  <nav class="nan">
+    <a href="proyecto.html" class="inss">Inicio</a>
+    <a href="peliculas.html" class="ine">Peliculas</a>
+    <a href="planes.html" class="in">Planes</a>
+    <a href="nosotros.html" class="in">Nosotros</a>
+    <a href="contacto.html" class="inn">Contacto</a>
+  </nav>
+   <img src="ChatGPT Image 29 ago 2026, 11_25_42.png" class="usuario">
+  </header>
+  <div class="hero-container">
+  <div class="hero-content">
+    <div class="title-wrapper">
+      <h1>Películas</h1>
+      <span class="icon">🎬</span>
+    </div>
+    <p class="description">Explora miles de historias y disfruta de tus películas favoritas.</p>
+    
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="buscador" placeholder="Buscar películas...">
+    </div>
+  </div>
+
+  <div class="hero-banner">
+    <img src="Gemini_Generated_Image_jr46wijr46wijr46 (1).jpeg" alt="Banner Películas">
+  </div>
+</div>
+
+<div class="categories-container">
+  <h2>Categorías</h2>
+  <div class="chips-wrapper">
+    <button class="chip active" data-filter="todas"> Todas</button>
+    <button class="chip" data-filter="accion">Acción</button>
+    <button class="chip" data-filter="comedia"> Comedia</button>
+    <button class="chip" data-filter="terror"> terror</button>
+    <button class="chip" data-filter="romance">Romance</button>
+    <button class="chip" data-filter="cienciaficcion">Ciencia ficción</button>
+    <button class="chip" data-filter="animacion">Animación</button>
+    <button class="chip" data-filter="drama">Drama</button>
+    <button class="btn-add">+</button>
+  </div>
+</div>
+<!-- Sección de Cuadrícula de Películas -->
+<div class="movies-section">
+  <div class="movies-grid" id="movies-grid">
+    
+    <!-- Tarjeta 1 -->
+    <div class="movie-card"
+      data-title="interestelar" data-category="cienciaficcion"
+      data-subtitulo="Interstellar" data-anio="2014" data-duracion="2h 49m" data-imdb="8.7"
+      data-generos="Ciencia Ficción, Drama, Aventura"
+      data-descripcion="Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad, mientras el tiempo corre distinto para quienes se quedan en la Tierra."
+      data-vimeo="1223801492" data-mega="https://mega.nz/embed/fDAAVIiB#t2fMKKvGVsF5oFXjywehHIyow4Wfb3pBTxwKJlUBRns">
+      <div class="poster-wrapper">
+        <img src="inter.jpg" alt="Película 1">
+        <span class="badge">4K</span>
+      </div>
+      <div class="movie-info">
+        <h3>Interestelar</h3>
+        <p class="genre">Ciencia Ficción • 2014</p>
+        <div class="rating">⭐ 8.7</div>
+        <button class="btn-watch" onclick="irADetallePelicula(this)">Ver ahora</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="movie-card"
+      data-title="spider-man across the spider-verse" data-category="accion animacion"
+      data-subtitulo="Spider-Man: Across the Spider-Verse" data-anio="2023" data-duracion="2h 20m" data-imdb="8.6"
+      data-generos="Animación, Acción, Aventura"
+      data-descripcion="Miles Morales viaja por un multiverso de arañas junto a Gwen Stacy, enfrentando a un nuevo villano y descubriendo lo que realmente significa ser Spider-Man."
+      data-vimeo="1223801493" data-mega="https://mega.nz/embed/PCZEWQ7b#gCLq9chGZmKk-69A2NpMvHnDX5p5mg8qgRbj5pBPUR8">
+      <div class="poster-wrapper">
+        <img src="spider.jpeg" alt="Película 2">
+        <span class="badge">HD</span>
+      </div>
+      <div class="movie-info">
+        <h3>Spider-Man: Across the Spider-Verse</h3>
+        <p class="genre">Animación / Acción • 2023</p>
+        <div class="rating">⭐ 8.6</div>
+        <button class="btn-watch" onclick="irADetallePelicula(this)">Ver ahora</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="movie-card"
+      data-title="oppenheimer" data-category="drama"
+      data-subtitulo="Oppenheimer" data-anio="2023" data-duracion="3h 0m" data-imdb="8.9"
+      data-generos="Drama, Historia, Biografía"
+      data-descripcion="La historia del físico J. Robert Oppenheimer y su papel al frente del Proyecto Manhattan, y las consecuencias morales de haber ayudado a crear la bomba atómica."
+      data-vimeo="1223801491" data-mega="https://mega.nz/embed/2b4QXbbC#ss7CJH1LnjS0v7kANs4abiFCksE8_cJk57zyeE5N2iM">
+      <div class="poster-wrapper">
+        <img src="open.jpg" alt="Película 3">
+        <span class="badge">4K</span>
+      </div>
+      <div class="movie-info">
+        <h3>Oppenheimer</h3>
+        <p class="genre">Drama / Historia • 2023</p>
+        <div class="rating">⭐ 8.9</div>
+        <button class="btn-watch" onclick="irADetallePelicula(this)">Ver ahora</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="movie-card"
+      data-title="angry birds la pelicula" data-category="comedia animacion"
+      data-subtitulo="The Angry Birds Movie" data-anio="2016" data-duracion="1h 37m" data-imdb="6.3"
+      data-generos="Animación, Aventura, Comedia, Familia"
+      data-descripcion="En una isla de pájaros felices que no vuelan, Red y sus amigos Chuck y Bomb, siempre vistos como raros, son los únicos que sospechan de unos misteriosos cerdos verdes que llegan de visita."
+      data-vimeo="1223801494" data-mega="https://mega.nz/embed/2aRGXQJD#xCuzNRMwERoaewMeyQWgjg7yudocUuy1AtrPfwtY69g">
+      <div class="poster-wrapper">
+        <img src="angry.jpg" alt="Película 4">
+        <span class="badge">HD</span>
+      </div>
+      <div class="movie-info">
+        <h3>angry birds la pelicula</h3>
+        <p class="genre">Comedia / Animación • 2021</p>
+        <div class="rating">⭐ 9.5</div>
+      <button class="btn-watch" onclick="irADetallePelicula(this)">Ver ahora</button>
+      </div>
+    </div>
+
+    <p id="sin-resultados" class="sin-resultados" style="display:none;">No se encontraron películas con ese filtro.</p>
+  </div>
+</div>
+
+<footer class="pie-pagina">
+  <p>PeliSpacio • Tu espacio de cine digital • &copy; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

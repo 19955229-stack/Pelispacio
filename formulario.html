@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de PeliSpacio</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <section class="form-section">
+  <h2>Escríbenos tu mensaje</h2>
+  <p class="subtitle">¿Tienes alguna duda o sugerencia sobre nuestro catálogo? Déjanos un mensaje y te responderemos pronto.</p>
+
+  <form class="contact-form" id="contact-form">
+    <div class="form-grid">
+      <!-- Nombre -->
+      <div class="input-group">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" placeholder="Tu nombre y apellido" required>
+      </div>
+
+      <!-- Correo -->
+      <div class="input-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <!-- Asunto / Plan -->
+      <div class="input-group full-width">
+        <label for="subject">Plan de interés</label>
+        <select id="subject">
+          <option value="basico">Plan Básico</option>
+          <option value="estandar">Plan Estándar</option>
+          <option value="premium">Plan Premium</option>
+          <option value="otro">Consulta general</option>
+        </select>
+      </div>
+
+      <!-- Mensaje -->
+      <div class="input-group full-width">
+        <label for="message">Mensaje</label>
+        <textarea id="message" rows="5" placeholder="Escribe aquí tu mensaje..." required></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-submit">Enviar mensaje</button>
+    <p id="form-confirmacion" class="form-confirmacion" style="display:none;"></p>
+  </form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
